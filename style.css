@@ -1,12 +1,12 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
-/* @media (max-width: 800px) {
+@media (max-width: 500px) {
   .article-heading {
-    color: red;
-    font-size: 20px;
+
+    font-size: 14px;
   }
-} */
+}
 
 ul {
   margin: 0;
