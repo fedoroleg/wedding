@@ -18,6 +18,12 @@
   padding: 0 15px; /* Добавление отступов по бокам, как в Bootstrap */
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 ul {
   margin: 0;
   padding: 0;
