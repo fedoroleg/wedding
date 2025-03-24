@@ -136,12 +136,6 @@ header {
   margin: auto;
 }
 
-.author {
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: row;
-}
-
 h2 {
   margin-top: 3rem;
   margin: auto;
@@ -168,8 +162,12 @@ article {
   margin: auto;
 }
 
+.author {
+}
+
 .author-heading {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
