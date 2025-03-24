@@ -1,22 +1,27 @@
-* {
-  font-family: "Open Sans", sans-serif;
-}
 @media (max-width: 500px) {
   .article-heading {
     font-size: 1.5rem;
   }
 }
 
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+.custom-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; /* Центрирование контейнера */
+  padding: 0 15px; /* Добавление отступов по бокам, как в Bootstrap */
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-img {
-  min-width: 200px;
-  min-height: 200px;
-  border: 1px solid grey;
 }
 
 .menu {
