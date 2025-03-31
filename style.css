@@ -1,3 +1,10 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;
+  --bs-body-color: #f8f9fa;
+  /* и остальные переменные */
+}
+
+
 @media (max-width: 500px) {
   /* .article-heading {
     font-size: 1.5rem;
