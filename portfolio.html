@@ -37,6 +37,23 @@
 
     <div class="custom-container">
 
+      <!-- ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ КНОПКА -->
+      <div class="theme-change">
+        
+        <button id="themeToggle" class="btn btn-secondary">
+          Переключить тему
+        </button>
+        
+      <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-bs-theme', newTheme);
+        });
+      </script>
+      </div>
+
       <p class="mb-6r">
         В альбоме «Все лучшее сразу!» собраны мои лучше фотографии. Остальные
         альбомы посвящены каждый своей паре.
@@ -48,22 +65,14 @@
 
 
 
-      <!-- СВАДЬБА 1000 пикселей -->
-      <!-- <div class="portfolio-wedding-card" >
-        <a class="wedding-card-link" href="file:///C:/Users/Oleg/Documents/Projects/wedding/second.html#">
-          <div class="wedding-card-content" style="background-image: url(&quot;https://optim.tildacdn.com/55f37cc8-0cba-4bb3-b1e7-a2e76ede485c/-/format/webp/1108061394.jpg&quot;);">
-          
-            <h2 class="weidding-card-title">Приключения москвичей в Питере</h2>
-            </img>
-          </div>
-        </a>
 
-
-      </div> -->
     </div>
 
     <!-- 1200 px container -->
     <div class="container">
+
+      <!-- МОЯ АДАПТИВНАЯ КАРТОЧКА -->
+
 
 
       <!-- СВАДЬБА -->
@@ -85,7 +94,7 @@
                 TВ этом посте расскажу про места для фото в плохую погоду в
                 Санкт-Петербурге
               </p>
-              <button type="button" class="btn btn-outline-secondary">
+              <button type="button" class="btn btn-outline-secondary mb-2">
                 Смотреть фотографии
               </button>
             </div>
@@ -111,7 +120,7 @@
               <p class="card-text">
                 Совсем коротко, нечего написать.
               </p>
-              <button type="button" class="btn btn-outline-secondary">
+              <button type="button" class="btn btn-outline-secondary mb-2">
                 Смотреть фотографии
               </button>
             </div>
@@ -138,7 +147,7 @@
                 TВ этом посте расскажу про места для фото в плохую погоду в
                 Санкт-Петербурге. Не скучно будет, читайте!
               </p>
-              <button type="button" class="btn btn-outline-secondary">
+              <button type="button" class="btn btn-outline-secondary mb-2">
                 Смотреть фотографии
               </button>
             </div>

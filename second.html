@@ -49,6 +49,22 @@
             <li class="menu-item">КОНТАКТЫ</li>
           </ul>
         </div>
+              <!-- ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ КНОПКА -->
+      <div class="theme-change">
+        
+        <button id="themeToggle" class="btn btn-secondary">
+          Переключить тему
+        </button>
+        
+      <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-bs-theme', newTheme);
+        });
+      </script>
+      </div>
       </header>
 
       <!-- MAIN ARTICLE -->
