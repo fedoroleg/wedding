@@ -53,6 +53,7 @@ h2,
 .h2,
 h1,
 .h1 {
+  padding: 0 0.7rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -76,6 +77,7 @@ h1,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 0 0.7rem;
 }
 
 /* CONTAINERS */
@@ -163,7 +165,6 @@ header {
   color: var(--menu-item-hover-color);
   text-decoration: underline;
 }
-
 
 /* IMAGES */
 
