@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thired Page</title>
+    <title>Third Page</title>
+    <link rel="stylesheet" href="./third.css" />
   </head>
   <body>
-    <h1>Треться страница, такие дела</h1>
+    <!-- CUSTOM HEADER -->
+    <header>
+      <div class="header-logo">
+        <a href="https://oleg-fedorov.ru/" class="header-link">
+          <div class="logo-name">ОЛЕГ ФЕДОРОВ</div>
+          <div class="logo-name-900">ОЛЕГ ФЕДОРОВ</div>
+          <div class="logo-subtext">СВАДЕБНЫЙ ФОТОГРАФ</div>
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li class="menu-item">БЛОГ</li>
+        <li class="menu-item">ОБО МНЕ</li>
+        <li class="menu-item">КОНТАКТЫ</li>
+      </ul>
+    </header>
+
+    <!-- ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ КНОПКА -->
+    <div class="theme-change">
+      <button id="themeToggle" class="btn btn-secondary">
+        Переключить тему
+      </button>
+
+      <script>
+        const themeToggle = document.getElementById("themeToggle");
+        themeToggle.addEventListener("click", () => {
+          const currentTheme =
+            document.documentElement.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          document.documentElement.setAttribute("data-theme", newTheme);
+        });
+      </script>
+    </div>
+    <!-- MAIN -->
+    <main class="container-960">
+      <!-- ARTICLE -->
+      <article>
+        <h1>Красивые места для свадебной фотоссессии в Санкт-Петербурге</h1>
+
+        <img src="./img/160709-1799.jpg" class="img-fluid" />
+
+        <p>
+          В этом посте я собрал более 20 мест, где можно пофотографироваться на
+          свадьбу в Петербурге. Все они находятся на улице и подходят только для
+          хорошей погоды. Красивые места для плохой погоды вы можете найти в
+          другом моем посте — где фотографироваться на свадьбу зимой и в дождь.
+        </p>
+        <h2>Исаакиевская площадь</h2>
+        <p>
+          Исаакиевская площадь — одно из моих любимых мест для свадебных фото.
+          Здесь находятся сразу несколько красивых локаций: Иссаакиевский собор,
+          гостиница Астория, Синий мост. Вид на Исаакиевский собор, дом
+          Лобанова-Ростовского и Адмиралтейство.
+        </p>
+        <img src="./img/160709-1265.jpg" alt="" class="img-fluid" />
+        <p>Гостиница Астория. Одно из красивейших зданий в Петербурге.</p>
+        <img src="./img/160709-1799.jpg" class="img-fluid" alt="" />
+        <p>
+          Синий мост с видом на реку Мойку. Вдалеке видны купол Казанского
+          собора и Торговый дом «Эсдерс и Схейфальс». Это место тоже находится
+          на Исаакиевский площади.
+        </p>
+      </article>
+    </main>
+    <!--  -->
+
+    <!-- FOOTER -->
   </body>
 </html>
