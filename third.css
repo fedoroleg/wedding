@@ -27,7 +27,7 @@
   --menu-item-hover-color: #3b3d40;
 
   --border-color: #c5c8cb;
-  --card-background-color: #fcfcfc;
+  --card-background-color: #f8f8f8;
 }
 
 [data-theme="dark"] {
@@ -272,7 +272,7 @@ header {
 
 .portfolio-card-btn {
   padding: 0 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* BUTTONS */
