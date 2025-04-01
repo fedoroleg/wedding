@@ -27,6 +27,7 @@
   --menu-item-hover-color: #3b3d40;
 
   --border-color: #c5c8cb;
+  --card-background-color: #fcfcfc;
 }
 
 [data-theme="dark"] {
@@ -39,6 +40,7 @@
   --menu-item-hover-color: #cacaca;
 
   --border-color: #495057;
+  --card-background-color: #1b1e21;
 }
 
 *,
@@ -231,7 +233,7 @@ header {
 }
 
 .portfolio-card {
-  background-color: #fcfcfc;
+  background-color: var(--card-background-color);
   border: 1px solid var(--border-color);
   margin-bottom: 2rem;
   overflow: hidden;
