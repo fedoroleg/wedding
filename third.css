@@ -1,3 +1,11 @@
+/* Оптимизация:
+Лучше группировать стили по компонентам и использовать минимально необходимые breakpoints (например, стандартные: 
+320px, 
+768px, 
+1024px, 
+1200px
+ */
+
 :root,
 [data-theme="light"] {
   --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
@@ -53,7 +61,6 @@ h2,
 .h2,
 h1,
 .h1 {
-  padding: 0 0.7rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -77,7 +84,19 @@ h1,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 0 0.7rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    padding: 0 0.7rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding: 0 0.7rem;
+  }
 }
 
 /* CONTAINERS */
