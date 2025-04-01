@@ -229,10 +229,14 @@ header {
 .portfolio-cards-container {
   display: flex;
   gap: 1.5rem;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  
 }
 
 .portfolio-card {
-  width: 550px;
   border: 1px solid var(--border-color);
   padding: 0 0 1rem 0;
   margin-bottom: 2rem;
@@ -244,10 +248,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 1rem;
 }
 
-.card-text-content {
-  flex-grow: ;
+.card-text-content p,
+h2 {
+  padding: 0;
 }
 
 /* BUTTONS */
