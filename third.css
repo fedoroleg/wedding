@@ -355,3 +355,15 @@ header {
   -moz-user-select: none;
   user-select: none;
 }
+
+a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: blue;
+  transition: width 0.3s;
+}
+a:hover::after {
+  width: 100%;
+}

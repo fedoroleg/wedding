@@ -8,35 +8,10 @@
     <link href="./bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-
     <div class="custom-container">
-      <!-- HEADER -->
-      <!-- <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <div class="logo">
-            <span class="fs-4 fw-bold">ОЛЕГ ФЕДОРОВ</span>
-            <span class="text-muted">свадебный фотограф</span>
-          </div>
-        </a>
-
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">ГЛАВНАЯ</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">БЛОГ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">ОБО МНЕ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">КОНТАКТЫ</a></li>
-        </ul>
-      </header> -->
-
       <!-- CUSTOM HEADER -->
-      <header >
-        <div class="header__logo"> 
+      <header>
+        <div class="header__logo">
           <a href="https://oleg-fedorov.ru/" class="header-link">
             <div class="logo-name">ОЛЕГ ФЕДОРОВ</div>
             <div class="logo-subtext">СВАДЕБНЫЙ ФОТОГРАФ</div>
@@ -49,22 +24,22 @@
             <li class="menu-item">КОНТАКТЫ</li>
           </ul>
         </div>
-              <!-- ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ КНОПКА -->
-      <div class="theme-change">
-        
-        <button id="themeToggle" class="btn btn-secondary">
-          Переключить тему
-        </button>
-        
-      <script>
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-          const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-bs-theme', newTheme);
-        });
-      </script>
-      </div>
+        <!-- ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ КНОПКА -->
+        <div class="theme-change">
+          <button id="themeToggle" class="btn btn-secondary">
+            Переключить тему
+          </button>
+
+          <script>
+            const themeToggle = document.getElementById("themeToggle");
+            themeToggle.addEventListener("click", () => {
+              const currentTheme =
+                document.documentElement.getAttribute("data-bs-theme");
+              const newTheme = currentTheme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-bs-theme", newTheme);
+            });
+          </script>
+        </div>
       </header>
 
       <!-- MAIN ARTICLE -->
@@ -78,19 +53,32 @@
         <div class="author mb-4">
           <img src="./img/author.jpg" alt="автор статьи" class="author-img" />
 
-            <div class="author-heading">
-              <small class>Автор статьи и фотографий:</small>
-              <span class="author-name">Олег Федоров</span>
-
+          <div class="author-heading">
+            <small class>Автор статьи и фотографий:</small>
+            <span class="author-name">Олег Федоров</span>
           </div>
-
         </div>
+
+        <!-- TESTS -->
+
+        <img
+          src="img/blog/10-best-hotels-for-wedding/160709-1265.webp"
+          alt=""
+        />
+        <img
+          src="img/blog/10-best-hotels-for-wedding/160709-1799.webp"
+          alt=""
+        />
+
+        <!-- END TESTS -->
+
         <p>
           В этом посте я собрал более 20 мест, где можно пофотографироваться на
           свадьбу в Петербурге. Все они находятся на улице и подходят только для
           хорошей погоды. Красивые места для плохой погоды вы можете найти в
           другом моем посте — где фотографироваться на свадьбу зимой и в дождь.
         </p>
+
         <h2>Исаакиевская площадь</h2>
         <p>
           Исаакиевская площадь — одно из моих любимых мест для свадебных фото.
@@ -124,15 +112,25 @@
           <!-- ПОСТ -->
           <div class="card mb-4">
             <div class="row g-0">
-              <div class="col-md-6 ">
-                <img src="./img/160709-1799.jpg" class="img-fluid rounded-start" alt="...">
+              <div class="col-md-6">
+                <img
+                  src="./img/160709-1799.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
               </div>
               <div class="col-md-6 d-flex">
                 <div class="card-body align-self-center">
-                  <h5 class="card-title fw-bold">Какой ЗАГС выбрать для свадьбы в Санкт-Петербурге</h5>
-                  <p class="card-text">TВ этом посте расскажу про места для фото в плохую погоду в
-                    Санкт-Петербурге</p>
-                  <button type="button" class="btn btn-outline-secondary">Читать статью</button>
+                  <h5 class="card-title fw-bold">
+                    Какой ЗАГС выбрать для свадьбы в Санкт-Петербурге
+                  </h5>
+                  <p class="card-text">
+                    TВ этом посте расскажу про места для фото в плохую погоду в
+                    Санкт-Петербурге
+                  </p>
+                  <button type="button" class="btn btn-outline-secondary">
+                    Читать статью
+                  </button>
                 </div>
               </div>
             </div>
@@ -141,15 +139,26 @@
           <!-- ПОСТ -->
           <div class="card mb-4">
             <div class="row g-0">
-              <div class="col-md-6 ">
-                <img src="./img/160709-1265.jpg" class="img-fluid rounded-start" alt="...">
+              <div class="col-md-6">
+                <img
+                  src="./img/160709-1265.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
               </div>
               <div class="col-md-6 d-flex">
                 <div class="card-body align-self-center">
-                  <h5 class="card-title">Пост в виде карточки, с фоткой слева. Красивые места для фотосессии</h5>
-                  <p class="card-text">TВ этом посте расскажу про места для фото в плохую погоду в
-                    Санкт-Петербурге</p>
-                  <button type="button" class="btn btn-outline-secondary">Читать статью</button>
+                  <h5 class="card-title">
+                    Пост в виде карточки, с фоткой слева. Красивые места для
+                    фотосессии
+                  </h5>
+                  <p class="card-text">
+                    TВ этом посте расскажу про места для фото в плохую погоду в
+                    Санкт-Петербурге
+                  </p>
+                  <button type="button" class="btn btn-outline-secondary">
+                    Читать статью
+                  </button>
                 </div>
               </div>
             </div>
@@ -157,21 +166,30 @@
           <!-- ПОСТ -->
           <div class="card mb-4">
             <div class="row g-0">
-              <div class="col-md-6 ">
-                <img src="./img/180914_0992.jpg" class="img-fluid rounded-start" alt="...">
+              <div class="col-md-6">
+                <img
+                  src="./img/180914_0992.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
               </div>
               <div class="col-md-6 d-flex">
                 <div class="card-body align-self-center">
-                  <h5 class="card-title">Пост в виде карточки, с фоткой слева</h5>
-                  <p class="card-text">TВ этом посте расскажу про места для фото в плохую погоду в
-                    Санкт-Петербурге</p>
-                  <button type="button" class="btn btn-outline-secondary">Читать статью</button>
+                  <h5 class="card-title">
+                    Пост в виде карточки, с фоткой слева
+                  </h5>
+                  <p class="card-text">
+                    TВ этом посте расскажу про места для фото в плохую погоду в
+                    Санкт-Петербурге
+                  </p>
+                  <button type="button" class="btn btn-outline-secondary">
+                    Читать статью
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-
-
+        </div>
         <!-- FOOTER -->
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
