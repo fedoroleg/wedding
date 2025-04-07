@@ -55,12 +55,13 @@ label {
 
   --border-color: #c5c8cb;
   --card-background-color: #f8f8f8;
-  --toggle-color: #bfbfbf;
+  --toggle-color: #bcbcbc;
   --toggle-icon-color: red;
 }
 
 /* DARK MODE TOGGLE */
 .dark-mode-toggle {
+  order: 9;
   display: flex;
   justify-content: space-between;
   border-radius: 50px;
@@ -198,16 +199,24 @@ p {
 /* HEADER-LOGO */
 header {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   margin-bottom: 2rem;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
 .header-logo {
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   margin-top: 1.5rem;
+  margin-right: auto;
 }
 
 .header-link {
@@ -235,11 +244,20 @@ header {
   letter-spacing: 0.12rem;
 }
 
-.header__logo {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-  justify-content: center;
+@media (max-width: 680px) {
+  .header-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .dark-mode-toggle {
+    order: unset;
+  }
+
+  header {
+    margin-bottom: 1rem;
+  }
 }
 
 /* TYPOGRAPHY */
