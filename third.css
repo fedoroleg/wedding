@@ -207,8 +207,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
-
   align-items: baseline;
   gap: 1.5rem;
   padding: 0 1rem;
@@ -246,17 +244,22 @@ header {
   letter-spacing: 0.12rem;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 767px) {
   .header-container {
     gap: 0.5rem;
-  }
-
-  .dark-mode-toggle {
-    /* order: unset; */
+    flex-direction: column;
+    align-items: center;
   }
 
   header {
     margin-bottom: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-logo {
+    text-align: center;
+    margin-right: unset;
   }
 }
 
