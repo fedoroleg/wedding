@@ -6,6 +6,33 @@
 1200px
  */
 
+/* REST WEBCADEMY */
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
 .theme-change {
   margin-bottom: 2rem;
 }
@@ -28,6 +55,45 @@
 
   --border-color: #c5c8cb;
   --card-background-color: #f8f8f8;
+  --toggle-color: #bfbfbf;
+  --toggle-icon-color: red;
+}
+
+/* DARK MODE TOGGLE */
+.dark-mode-toggle {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 51px;
+  height: 26px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: var(--toggle-color);
+  position: relative;
+}
+
+.dark-mode-toggle::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.2s ease-in;
+}
+
+.dark-mode-toggle-active::before {
+  left: 26px;
+}
+
+.dark-mode-toggle-icon {
+  color: var(--toggle-icon-color);
+  fill: var(--toggle-icon-color);
+  z-index: 9;
 }
 
 [data-theme="dark"] {
@@ -135,6 +201,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .header-logo {
@@ -180,7 +247,6 @@ header {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 3rem;
-  max-width: ;
 }
 
 @media (max-width: 1023px) {
@@ -356,7 +422,7 @@ header {
   user-select: none;
 }
 
-a::after {
+/* a::after {
   content: "";
   display: block;
   width: 0;
@@ -366,4 +432,4 @@ a::after {
 }
 a:hover::after {
   width: 100%;
-}
+} */
